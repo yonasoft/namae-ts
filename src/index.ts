@@ -1,15 +1,7 @@
 import fs from "fs";
 import { parse } from "csv-parse/sync";
+import { NameEntry, FullName } from "./types";
 
-interface NameEntry {
-  romaji: string;
-  kanji: string;
-  kana: string;
-  gender?: "male" | "female";
-  type: "surname" | "given";
-}
-
-// Load the CSV data once
 const loadNames = (): NameEntry[] => {
   const data = fs.readFileSync("src/assets/names.csv", "utf-8");
   return parse(data, {
@@ -40,7 +32,7 @@ export const getRandomName = (
 
 export const getRandomFullName = (
   gender: "male" | "female" | "all"
-): { given: NameEntry; surname: NameEntry } | null => {
+): FullName | null => {
   const givenName = getRandomName("given", gender);
   const surname = getRandomName("surname", "all");
 
@@ -50,3 +42,5 @@ export const getRandomFullName = (
 
   return { given: givenName, surname };
 };
+
+export * from "./types";
