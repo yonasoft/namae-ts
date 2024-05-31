@@ -1,13 +1,14 @@
 import fs from "fs";
-import { parse } from "csv-parse/sync";
+import { parse } from "papaparse";
 import { NameEntry, FullName } from "./types";
 
 const loadNames = (): NameEntry[] => {
   const data = fs.readFileSync("src/assets/names.csv", "utf-8");
-  return parse(data, {
-    columns: true,
-    skip_empty_lines: true,
+  const parsedData = parse<NameEntry>(data, {
+    header: true,
+    skipEmptyLines: true,
   });
+  return parsedData.data;
 };
 
 const names = loadNames();
