@@ -1,0 +1,17 @@
+# Ignore data files
+src/assets/enamdictu
+
+# Ignore parsing script
+src/util/parseEnamdict.ts
+
+# Ignore other development files
+*.log
+node_modules
+src/**/*.ts
+dist/**/*.map
+test
+coverage
+.DS_Store
+.env
+.vscode
+.idea

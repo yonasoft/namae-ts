@@ -1,0 +1,31 @@
+{
+  "name": "namae-ts",
+  "version": "1.0.1",
+  "description": "Japanese name generator",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "bin": {
+    "namae-ts": "./dist/cli.js"
+  },
+  "keywords": [],
+  "author": "yonasoft",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.12.13",
+    "@types/sqlite3": "^3.1.11",
+    "@types/yargs": "^17.0.32",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5",
+    "yargs": "^17.4.0"
+  },
+  "dependencies": {
+    "@types/args": "^5.0.3",
+    "csv-parse": "^5.5.6",
+    "csv-stringify": "^6.5.0"
+  }
+}
