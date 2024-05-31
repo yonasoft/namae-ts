@@ -1,6 +1,6 @@
 {
   "name": "namae-ts",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Japanese name generator",
   "main": "dist/index.js",
   "scripts": {
@@ -18,7 +18,6 @@
     "@types/papaparse": "^5.3.14",
     "@types/sqlite3": "^3.1.11",
     "@types/yargs": "^17.0.32",
-    "csv-stringify": "^6.5.0",
     "sqlite": "^5.1.1",
     "sqlite3": "^5.1.7",
     "ts-node": "^10.9.2",
@@ -27,6 +26,7 @@
   },
   "dependencies": {
     "@types/args": "^5.0.3",
+    "csv-stringify": "^6.5.0",
     "papaparse": "^5.4.1"
   }
 }

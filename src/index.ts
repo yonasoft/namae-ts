@@ -36,7 +36,6 @@ export const getRandomName = (
   return filteredNames[randomIndex];
 };
 
-// Get a random full name (given name + surname)
 export const getRandomFullName = (
   gender: "male" | "female" | "all" = "all"
 ): FullName | null => {
