@@ -1,6 +1,6 @@
 {
   "name": "namae-ts",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "Japanese name generator",
   "main": "dist/index.js",
   "scripts": {

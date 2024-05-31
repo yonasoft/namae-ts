@@ -2,7 +2,7 @@ export interface NameEntry {
   romaji: string;
   kanji: string;
   kana: string;
-  gender?: "male" | "female";
+  gender?: "male" | "female" | "all";
   type: "surname" | "given";
 }
 

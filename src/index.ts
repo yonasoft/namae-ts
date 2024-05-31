@@ -14,12 +14,14 @@ const names = loadNames();
 
 export const getRandomName = (
   type: "surname" | "given",
-  gender: "male" | "female" | "all"
+  gender: "male" | "female" | "all" = "all"
 ): NameEntry | null => {
   let filteredNames = names.filter((name) => name.type === type);
 
-  if (gender !== "all") {
-    filteredNames = filteredNames.filter((name) => name.gender === gender);
+  if (type === "given" && gender !== "all") {
+    filteredNames = filteredNames.filter(
+      (name) => name.gender === gender || name.gender === "all"
+    );
   }
 
   if (filteredNames.length === 0) {
@@ -31,10 +33,10 @@ export const getRandomName = (
 };
 
 export const getRandomFullName = (
-  gender: "male" | "female" | "all"
+  gender: "male" | "female" | "all" = "all"
 ): FullName | null => {
   const givenName = getRandomName("given", gender);
-  const surname = getRandomName("surname", "all");
+  const surname = getRandomName("surname");
 
   if (!givenName || !surname) {
     return null;
