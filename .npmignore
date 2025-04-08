@@ -1,14 +1,12 @@
-# Ignore data files
-src/assets/enamdictu
 
-# Ignore parsing script
+src/assets/enamdictu
 src/util/parseEnamdict.ts
 
-# Ignore other development files
 *.log
 node_modules/
+npm-debug.log*
 src/**/*.ts
-dist/**/*.map
+dist/
 test
 coverage
 .DS_Store
@@ -18,3 +16,4 @@ coverage
 dist/
 src/
 !dist/
+*.local

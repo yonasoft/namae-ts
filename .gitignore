@@ -78,6 +78,4 @@ src/parseEnamdict.ts
 **/*.js.map
 **/*.d.ts
 
-# Ignore CSV and JSON files that should not be committed
-src/assets/names.csv
-src/assets/names.json
+node_modules/
