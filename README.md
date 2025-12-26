@@ -1,6 +1,8 @@
 
 # namae-ts
 
+### [npm](https://www.npmjs.com/package/namae-ts)
+
 A random Japanese name generator with CLI support.
 
 ## Installation
