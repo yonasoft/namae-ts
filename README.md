@@ -2,6 +2,7 @@
 # namae-ts
 
 ### [npm](https://www.npmjs.com/package/namae-ts)
+### [npm-stat][(https://www.npmjs.com/package/namae-ts](https://npm-stat.com/charts.html?package=namae-ts&from=2023-01-01&to=2026-04-14))
 
 A random Japanese name generator with CLI support.
 
