@@ -5,8 +5,8 @@ A random Japanese name generator with CLI and library support.
 <a href="https://www.npmjs.com/package/namae-ts">
   <img src="https://img.shields.io/npm/v/namae-ts?style=flat-square" alt="npm version"/>
 </a>
-<a href="https://npm-stat.com/charts.html?package=namae-ts&from=2023-01-01">
-  <img src="https://img.shields.io/npm/dt/namae-ts?style=flat-square" alt="npm downloads"/>
+<a href="https://npm-stat.com/charts.html?package=namae-ts">
+  <img src="https://img.shields.io/badge/npm--stat-View%20Downloads-blue?style=flat-square" alt="View download stats on npm-stat"/>
 </a>
 <img src="https://img.shields.io/badge/Language-TypeScript-blue?logo=typescript&style=flat-square" alt="TypeScript"/>
 <img src="https://img.shields.io/badge/Node.js-Compatible-green?logo=node.js&style=flat-square" alt="Node.js"/>
